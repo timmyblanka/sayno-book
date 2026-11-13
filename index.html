@@ -400,11 +400,11 @@ html.about-open .entry-in, html.cine #tags { opacity: 0; pointer-events: none; }
 .head-btns { display: flex; gap: 12px; }
 @media (max-width: 760px) {
   .peek { display: inline; }
-  html[data-view="day"] #scene { filter: blur(7px) saturate(0.9); transform: scale(1.06); transition: filter 0.4s, transform 0.4s; }
+  html[data-view="day"] #scene { transform: scale(1.06); transition: transform 0.4s; }
   html[data-view="day"] .vignette { background: rgba(242, 238, 230, 0.35); }
   html[data-view="day"] .panel.chat-panel { top: calc(var(--top) + 4px); height: auto; bottom: 10px; transition: transform 0.45s ease; }
   html[data-view="day"] #tags, html[data-view="day"] .rail { opacity: 0; pointer-events: none; }
-  html.peeking[data-view="day"] #scene { filter: none; transform: none; }
+  html.peeking[data-view="day"] #scene { transform: none; }
   html.peeking[data-view="day"] .vignette { background: none; }
   html.peeking[data-view="day"] .panel.chat-panel { animation: none; transform: translateY(calc(100% - 64px)); }
 }
